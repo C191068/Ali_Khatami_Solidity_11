@@ -15,7 +15,7 @@ and we can make  ```getConversionRate()``` as it's function like this ```msg.val
 
 ![f70](https://user-images.githubusercontent.com/89090776/236683241-87c31f70-3dc8-4c27-9319-ce9f53042c3d.jpg)
 
-Figure1: for this we created a new solidity file ```akrkPriceconverter.sol```<br>
+Figure1: for this we created a new solidity file ```akrkPriceconverter.sol``` and it is gonna be a libraray that we can attacch to uint256<br>
 
 
 
