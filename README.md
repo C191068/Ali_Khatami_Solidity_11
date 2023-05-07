@@ -9,5 +9,10 @@ https://solidity-by-example.org/ is an important documentation for solidity<br>
 
 Libraries are similar to contracts, but we can't declare any state variable and we can't send ether.<br>
 
-We can also use libraries to add more functionality to different values <br>
+We can also use libraries to add more functionality to different values  <br>
+whic means we can make ```msg.value``` of the contract of this link  https://solidity-by-example.org/  to something like struct or contract <br>
+and we can make  ```getConversionRate()``` as it's function like this ```msg.value.getConversionRate()``` <br>
+
+
+
 
