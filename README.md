@@ -13,6 +13,13 @@ We can also use libraries to add more functionality to different values  <br>
 whic means we can make ```msg.value``` of the contract of this link  https://solidity-by-example.org/  to something like struct or contract <br>
 and we can make  ```getConversionRate()``` as it's function like this ```msg.value.getConversionRate()``` <br>
 
+![f70](https://user-images.githubusercontent.com/89090776/236683241-87c31f70-3dc8-4c27-9319-ce9f53042c3d.jpg)
+
+Figure1: for this we created a new solidity file ```akrkPriceconverter.sol```<br>
+
+
+
+
 
 
 
