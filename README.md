@@ -17,6 +17,19 @@ and we can make  ```getConversionRate()``` as it's function like this ```msg.val
 
 Figure1: for this we created a new solidity file ```akrkPriceconverter.sol``` and it is gonna be a libraray that we can attacch to uint256<br>
 
+```
+//SPDX-License-Identifier:MIT
+
+pragma solidity ^0.8.8;
+
+library akrkPriceConverter{
+
+}
+
+```
+
+instead of using the keyword ```contract``` we use the keyword ```library```
+
 
 
 
