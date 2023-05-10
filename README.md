@@ -284,6 +284,16 @@ library akrkPriceConverter a parameter is passed here  ``` function getConversio
 this is because here ```msg.value``` is a parameter at ```msg.value.getConversionRate()``` <br>
 
 
+![e3](https://github.com/C191068/Ali_Khatami_Solidity_11/assets/89090776/de19dff3-c3b9-49d2-a13a-800b5a4f4fe7)
+Figure3: if there are more than one parameter at ``` function getConversionRate(uint256 ethAmount)``` of our library<br>
+
+![e4](https://github.com/C191068/Ali_Khatami_Solidity_11/assets/89090776/49c2b706-4e16-4a85-83d9-5baceb7334c7)
+Figure4: then we have to make change like this at ``` require(msg.value.getConversionRate() >= minimumUSD , "Not send enough");```
+
+
+
+
+
 
 
 
