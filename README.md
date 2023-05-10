@@ -219,7 +219,11 @@ at ```akrkPriceConvertor.sol``` at our ```library akrkPriceConvertor``` the firs
 is at here ```getConversionRate(uint256 ethAmount)``` and it is going to be the object that is called on itself <br>
 
 
+```msg.value.getCoversionRate();``` is equal to ```getCoversionRate(msg.value);```<br>
 
+in our ```library akrkPriceConverter``` ,  ```msg.value``` gonna passed as input parameter to <br>
+
+```function getConversionRate(uint256 ethAmount)``` 
 
 
 
