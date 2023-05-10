@@ -159,15 +159,12 @@ library akrkPriceConverter{
 }
 
 ```
+
 now we gonna import  "./akrkPriceConvertor.sol" to ```akrkFundme.sol``` and the code is given below<br>
 
+
+
 ```
-
-
-
-
-
-
 
 
 
@@ -191,7 +188,8 @@ contract akrkFundMe  {
     function fund() public payable {
      
      //as we want to convert msg.value to USD we made the following changes
-        require(getConversionRate(msg.value) >= minimumUSD , "Not send enough");// to get accees to the 'value' at deploy at run transaction tab
+       msg.value.getCoversionRate();
+        //require(getConversionRate(msg.value) >= minimumUSD , "Not send enough");// to get accees to the 'value' at deploy at run transaction tab
         //1e18 is 1 ether, here the value must be greater than 1 ether
         //require is a checker it checks whether the value is greater than 1 ether
         // if not it is going to revert with an error messsage shown above
@@ -213,9 +211,8 @@ contract akrkFundMe  {
 
 
 
-
-
 ```
+
 
 
 at ```akrkPriceConvertor.sol``` at our ```library akrkPriceConvertor``` the first variable that is going to passed to the function<br>
