@@ -165,6 +165,9 @@ now we gonna import  "./akrkPriceConvertor.sol" to ```akrkFundme.sol``` and the 
 
 
 
+
+
+
 //SPDX-License-Identifier:MIT
 
 pragma solidity ^0.8.8;
@@ -172,6 +175,8 @@ pragma solidity ^0.8.8;
 import "./akrkPriceConvertor.sol"
 
 contract akrkFundMe  {
+
+    using akrkPriceConverter for uint256;
 
     uint256 public minimumUSD=50 * 1e18; //as getConversionRate() returns 18 zeroes after decimel place
  
@@ -242,9 +247,13 @@ contract akrkFundMe  {
 }
 
 
+
+
 ```
 
 
+at ```akrkPriceConvertor.sol``` at our ```library akrkPriceConvertor``` the first variable that is going to passed to the function<br>
+is at here ```getConversionRate(uint256 ethAmount)``` and it is going to be the object that is called on itself <br>
 
 
 
