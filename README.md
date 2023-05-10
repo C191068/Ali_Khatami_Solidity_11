@@ -89,6 +89,10 @@ of ```akrkFundMe.sol``` andf delete them
 ![e2](https://github.com/C191068/Ali_Khatami_Solidity_11/assets/89090776/86d83418-7bf5-453c-872b-ca1f9aaa5a97)
 Figure2: then we will paste at ```akrkPriceConvertor.sol```
 
+We will also copy ```import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";``` from ```akrkFundMe.sol```<br>
+delete it from there and paste it at  ```akrkPriceConvertor.sol``` as we are using ```AggregatorV3Interface``` at<br>
+```akrkPriceConvertor.sol```
+
 
 
 
