@@ -277,6 +277,11 @@ contract akrkFundMe  {
 ```
 
 
+Here in the above code at this line ``` require(msg.value.getConversionRate() >= minimumUSD , "Not send enough");``` <br>
+we can see we don't pass any value between the first bracket at here ```msg.value.getConversionRate()``` but at our <br>
+library akrkPriceConverter a parameter is passed here  ``` function getConversionRate(uint256 ethAmount)``` <br>
+
+this is because here ```msg.value``` is a parameter at ```msg.value.getConversionRate()``` <br>
 
 
 
