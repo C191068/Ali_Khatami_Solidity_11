@@ -96,7 +96,10 @@ Figure2: then we will paste at ```akrkPriceConvertor.sol```
 
 We will also copy ```import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";``` from ```akrkFundMe.sol```<br>
 delete it from there and paste it at  ```akrkPriceConvertor.sol``` as we are using ```AggregatorV3Interface``` at<br>
-```akrkPriceConvertor.sol```
+```akrkPriceConvertor.sol```<br>
+
+all functions inside of our library need tobe internal<br>
+
 
 
 
