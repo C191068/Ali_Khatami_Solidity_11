@@ -83,8 +83,8 @@ library akrkPriceConverter{
 
 
 ![e1](https://github.com/C191068/Ali_Khatami_Solidity_11/assets/89090776/766fc67a-0c04-464e-89fc-8e15d526390f)
-Figure1: here we have copy the ```getPrice()``` , ```getVerion()``` and ```getConversionRate(uint256 ethAmount)``` function<br>
-of ```akrkFundMe.sol```
+Figure1: here we have to copy the ```getPrice()``` , ```getVerion()``` and ```getConversionRate(uint256 ethAmount)``` function<br>
+of ```akrkFundMe.sol``` andf delete them
 
 ![e2](https://github.com/C191068/Ali_Khatami_Solidity_11/assets/89090776/86d83418-7bf5-453c-872b-ca1f9aaa5a97)
 Figure2: then we will paste at ```akrkPriceConvertor.sol```
