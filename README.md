@@ -291,6 +291,9 @@ Figure3: if there are more than one parameter at ``` function getConversionRate(
 Figure4: then we have to make change like this at ``` require(msg.value.getConversionRate() >= minimumUSD , "Not send enough");```
 
 
+and by this way we have minimized our ```akrkFundMe.sol``` by moving a lot of math and functions to ```library akrkPriceConverter```
+
+
 
 
 
