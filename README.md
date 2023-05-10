@@ -223,7 +223,11 @@ is at here ```getConversionRate(uint256 ethAmount)``` and it is going to be the 
 
 in our ```library akrkPriceConverter``` ,  ```msg.value``` gonna passed as input parameter to <br>
 
-```function getConversionRate(uint256 ethAmount)``` 
+```function getConversionRate(uint256 ethAmount)``` <br>
+
+
+```function getPrice()```  and  ```function getVerion()```  does not need any number so we leave thos e blank right now <br>
+
 
 
 
