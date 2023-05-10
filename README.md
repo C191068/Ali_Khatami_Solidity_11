@@ -35,7 +35,10 @@ instead of using the keyword ```contract``` we use the keyword ```library```
 
 pragma solidity ^0.8.8;
 
+import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
+
 library akrkPriceConverter{
+
     function getPrice() public view returns(uint256) {
 
         //ABI
@@ -75,9 +78,11 @@ library akrkPriceConverter{
 
 
     }
-    
+
+
 
 }
+
 
 ```
 
