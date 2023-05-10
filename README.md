@@ -228,6 +228,58 @@ in our ```library akrkPriceConverter``` ,  ```msg.value``` gonna passed as input
 
 ```function getPrice()```  and  ```function getVerion()```  does not need any number so we leave thos e blank right now <br>
 
+we modify the code ```akrkFundme.sol``` in the following way:
+
+```
+
+//SPDX-License-Identifier:MIT
+
+pragma solidity ^0.8.8;
+
+import "./akrkPriceConvertor.sol";
+
+contract akrkFundMe  {
+
+    using akrkPriceConverter for uint256;
+
+    uint256 public minimumUSD=50 * 1e18; //as getConversionRate() returns 18 zeroes after decimel place
+ 
+    address[] public funders;// we create an address array make it public 
+// we have use payable keyword with the function below to make it payable with any native blockchain currency
+    //below we have done mapping of addresses to how much money each of the people sent
+    mapping(address => uint256) public addressToAmountFunded ;
+
+    function fund() public payable {
+     
+     //as we want to convert msg.value to USD we made the following changes
+       
+        require(msg.value.getConversionRate() >= minimumUSD , "Not send enough");// to get accees to the 'value' at deploy at run transaction tab
+        //1e18 is 1 ether, here the value must be greater than 1 ether
+        //require is a checker it checks whether the value is greater than 1 ether
+        // if not it is going to revert with an error messsage shown above
+        //adding funders to the array 
+         funders.push(msg.sender);
+         addressToAmountFunded[msg.sender] = msg.value;// It is for when somebody funds our contract
+
+    }// To send money. We made it public so that anybody can call it
+
+  //The function below is created so that we can get price of ethereum in terms of USD , so that we can convert msg.value to USD
+//Both functions are public because we can do whatever we want with them
+//By using the getPrice() function below we are going to interact with contract outside of our project
+  
+  
+   
+    
+
+}
+
+
+```
+
+
+
+
+
 
 
 
