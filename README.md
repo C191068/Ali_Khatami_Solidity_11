@@ -297,12 +297,26 @@ and by this way we have minimized our ```akrkFundMe.sol``` by moving a lot of ma
 ![h22](https://github.com/C191068/Ali_Khatami_Solidity_11/assets/89090776/8bd06f9e-e679-46b8-b6b8-879a7b7eee63)
 
 
-Figure5: Here we have use the command ```npm install --save-dev @nomicfoundation/hardhat-toolbox``` <br>
+Figure5: Here we have use the command <br>
+
+```
+
+npm install --save-dev @nomicfoundation/hardhat-toolbox
+
+```
+
 then the node modules folder will appear <br>
 
 ![h23](https://github.com/C191068/Ali_Khatami_Solidity_11/assets/89090776/5a73b559-8122-4206-9364-4ea543fb03f3)
 
-Figure6: When we give this command ```yarn add --dev @chainlink/contracts``` the above chainlink <br>
+Figure6: When we give this command
+
+```
+yarn add --dev @chainlink/contracts
+
+```
+
+the above chainlink <br>
 shown with yellow arrow comes inside node modules folder <br>
 
 
